@@ -1,0 +1,159 @@
+body {
+    font-family: $main-font;
+    letter-spacing: .5px;
+    color: #222222;
+}
+
+#landingPage {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: url(../../../media/layout/images/background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 786px) {
+    #landingPage {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        background: url(../../../media/layout/images/background.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+
+#aboutPage {
+    position: relative;
+    padding-top: 40px;
+}
+
+#servicesPage {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#locationsPage {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.img-adjust{
+    padding-top: 20px;
+}
+
+.section-title {
+    height: 100px;
+    width: 100%;
+    background: $primary;
+    line-height: 100px;
+    
+    .social-like-btn {
+        font-size: 30px;
+        font-weight: 100;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+div.logoWrapper {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    top: 130px;
+}
+
+div.blueLine {
+    position: relative;
+    top: 140px;
+    height: 1px;
+    width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(42,117,186,0), rgba(42,117,186,1), rgba(42,117,186,0)); 
+}
+
+div.blueLineService {
+    position: relative;
+    height: 1px;
+    width: 800px;
+    margin: 40px auto 30px;
+    background: linear-gradient(to right, rgba(42,117,186,0), rgba(42,117,186,1), rgba(42,117,186,0));
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background: $primary;
+    padding: 20px 0;
+    
+    p.copyright {
+        position: relative;
+        bottom: 0px;
+        color: rgba(255,255,255,.5);
+        font-weight: 100;
+        text-align: right;
+        
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+    
+    ul.footerSocial {
+        list-style-type: none;
+        padding-left: 0;
+        
+        li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        a {
+            color: rgba(255,255,255,.5);
+            transition: all .4s ease;
+            &:hover,
+            &:focus,
+            &:active {
+                transition: all .4s ease;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.footerNav {
+    padding-left: 0;
+    list-style-type: none;
+    
+    li { 
+        margin-right: 20px;
+        text-align: left;
+        
+        @media screen and (max-width: 768px) {
+            margin: 0 0;
+            text-align: center;
+        }
+        
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 200;
+            transition: all .4s ease;
+            &:hover,
+            &:focus,
+            &:active {
+                transition: all .4s ease;
+                font-weight: 200;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footerMobile {
+    text-align: center;
+    margin: 0 auto;
+    
+    
+}

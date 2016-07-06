@@ -1,0 +1,36 @@
+.modal-header {
+    background: $primary;
+    color: #ffffff;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.modal-footer {
+    background: $primary;
+}
+
+.modalImg {
+    margin: 0 auto;
+}
+
+.class {
+    font-size: 16px;
+    font-weight: 400;
+    color: $primary;
+}
+
+.day {
+    font-size: 20px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.times {
+    list-style-type: none;
+    
+    li {
+        display: block;
+        margin-right: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

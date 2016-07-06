@@ -1,0 +1,267 @@
+////////////////////////
+/* Desktop Nav Styles */
+////////////////////////
+
+ul.nav.navbar-nav.navbar-right li a {
+    position: relative;
+    color: #111111;
+    font-weight: 200;
+    text-align: center;
+    transition: all .4s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        transition: all .4s ease;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        bottom: 10px;
+        height: 1px;
+        background: linear-gradient(to right, rgba(42,117,186,0), rgba(42,117,186,1), rgba(42,117,186,0));
+        transition: all .4s ease;
+    }
+    
+    @media screen and (max-width: 768px) {
+        ul.nav.navbar-nav.navbar-right li a {
+            position: relative;
+            color: #111111;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+}
+
+ul.nav.navbar-nav.navbar-right li a:hover::after,
+ul.nav.navbar-nav.navbar-right li a:focus::after {
+    transition: all .4s ease;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+div.slogan {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    
+    h1 {
+        font-family: Helvetica Neue, Arial, sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: $primary;
+    }
+    
+    @media screen and (max-width: 768px) {
+        position: relative;
+        top: 125px;
+        width: 150px;
+        margin: 0 auto;
+        
+        h1 {
+            line-height: 70px;
+        }
+    }
+}
+
+div.down-arrow {
+    position: relative;
+    top: 300px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    line-height: 68px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255,255,255,.5);
+    &:hover {
+        background: rgba(255,255,255,.7);
+    }
+    
+    i {
+        color: $primary;
+        font-size: 36px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        position: relative;
+        top: 200px;
+    }
+}
+
+div.sharonBio {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: .5px;
+    color: #222222;
+    
+    h1 {
+        color: $primary;
+        font-weight: 200;
+        font-size: 32px;
+    }
+    
+    p a {
+        color: $primary;
+        text-decoration: none;
+        transition: all .4s ease;
+        &:hover {
+            transition: all .4s ease;
+            color: $primary;
+            letter-spacing: 1px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        text-align: left;
+    }
+}
+
+.serviceLeft {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: .5px;
+    color: #222222;
+    
+    h1 {
+        color: $primary;
+        font-weight: 200;
+        font-size: 32px;
+    }
+    
+    a {
+        color: $primary;
+        font-weight: 200;
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($primary, 5%);
+            text-decoration: none;
+        }
+    }
+}
+
+.serviceRight {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: .5px;
+    color: #222222;
+    
+    h1 {
+        color: $primary;
+        font-weight: 200;
+        font-size: 32px;
+    }
+    
+    a {
+        color: $primary;
+        font-weight: 200;
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($primary, 5%);
+            text-decoration: none;
+        }
+    }
+}
+
+.disclaimer {
+    text-align: center;
+    color: $primary;
+    font-size: 14px;
+    font-weight: 400;
+    
+    a {
+        font-weight: 400;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: darken($primary, 5%);
+        }
+    }
+}
+
+
+
+//////////////////
+/* Modal Styles */
+//////////////////
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.modal-body.story {
+    padding: 0 30px;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 200;
+    
+    p {
+    
+        a {
+            color: $primary;
+            &:hover,
+            &:focus,
+            &:active {
+                color: darken($primary, 5%);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.mobileImg {
+    padding: 0 40px;
+}
+
+.testimonialTitle {
+    
+    h1 {
+        font-size: 24px;
+        font-weight: 200;
+        color: $primary;
+        padding: 0 30px;
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 200;
+        color: #111111;
+        padding: 0 30px;
+        
+        .quoteName {
+            font-size: 14px;
+            font-weight: 200;
+            color: #999999;
+            text-align: right;
+            font-style: italic;
+            padding: 0 50px;
+        }
+        
+        .testimonialLink {
+            color: $primary;
+            text-decoration: none;
+            &:hover,
+            &:focus,
+            &:active {
+                color: darken($primary, 5%);
+                text-decoration: none;
+            }
+        }
+    }
+}
